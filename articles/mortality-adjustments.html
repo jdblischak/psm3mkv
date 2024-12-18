@@ -5,7 +5,6 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="psm3mkv">
 <title>Mortality adjustments • psm3mkv</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -15,63 +14,47 @@
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
+<link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
+<script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
 <meta property="og:title" content="Mortality adjustments">
-<meta property="og:description" content="psm3mkv">
-<meta property="og:image" content="https://merck.github.io/psm3mkv/logo.png">
-<!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
-    
 
-    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light" data-bs-theme="light"><div class="container">
-    
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-light" data-bs-theme="light" aria-label="Site navigation"><div class="container">
+
     <a class="navbar-brand me-2" href="../index.html">psm3mkv</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.1.9002</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.2</small>
 
-    
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
-<li class="nav-item">
-  <a class="nav-link" href="../reference/index.html">Reference</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
 <li class="active nav-item dropdown">
-  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
-  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
-    <a class="dropdown-item" href="../articles/example.html">Example use of psm3mkv</a>
-    <a class="dropdown-item" href="../articles/mortality-adjustments.html">Mortality adjustments</a>
-  </div>
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
+<li><a class="dropdown-item" href="../articles/example.html">Example use of psm3mkv</a></li>
+    <li><a class="dropdown-item" href="../articles/mortality-adjustments.html">Mortality adjustments</a></li>
+  </ul>
 </li>
-<li class="nav-item">
-  <a class="nav-link" href="../news/index.html">Changelog</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
       </ul>
-<form class="form-inline my-2 my-lg-0" role="search">
-        <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off">
-</form>
-
-      <ul class="navbar-nav">
-<li class="nav-item">
-  <a class="external-link nav-link" href="https://github.com/Merck/psm3mkv/" aria-label="github">
-    <span class="fab fa fab fa-github fa-lg"></span>
-     
-  </a>
-</li>
+<ul class="navbar-nav">
+<li class="nav-item"><form class="form-inline" role="search">
+ <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json">
+</form></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://github.com/Merck/psm3mkv/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
       </ul>
 </div>
 
-    
+
   </div>
 </nav><div class="container template-article">
 
@@ -83,7 +66,7 @@
       <img src="../logo.png" class="logo" alt=""><h1>Mortality adjustments</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/Merck/psm3mkv/blob/HEAD/vignettes/mortality-adjustments.Rmd" class="external-link"><code>vignettes/mortality-adjustments.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/Merck/psm3mkv/blob/main/vignettes/mortality-adjustments.Rmd" class="external-link"><code>vignettes/mortality-adjustments.Rmd</code></a></small>
       <div class="d-none name"><code>mortality-adjustments.Rmd</code></div>
     </div>
 
@@ -106,30 +89,44 @@ background mortality from a given life table.</p>
 <h3 id="notation">Notation<a class="anchor" aria-label="anchor" href="#notation"></a>
 </h3>
 <p>We denote functions of survival, hazard and cumulative hazard as
-<span class="math inline">\(S(t), h(t)\)</span> and <span class="math inline">\(H(t)\)</span>. There are ‘unadjusted’ values for
-relevant endpoints (e.g. PFS) dependent on the model structure (PSM,
-STM-CF or STM-CR). We assume that there is a ‘general background
-mortality’, against which any extrapolations and derivations of RMD
-should be constrained, denoted with subscript ‘gen’. Consequently there
-are ‘adjusted’ values, denoted with superscript ‘adj’.</p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">S(t), h(t)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">H(t)</annotation></semantics></math>.
+There are ‘unadjusted’ values for relevant endpoints (e.g. PFS)
+dependent on the model structure (PSM, STM-CF or STM-CR). We assume that
+there is a ‘general background mortality’, against which any
+extrapolations and derivations of RMD should be constrained, denoted
+with subscript ‘gen’. Consequently there are ‘adjusted’ values, denoted
+with superscript ‘adj’.</p>
 </div>
 <div class="section level3">
 <h3 id="background-mortality-survival-and-hazard-functions">Background mortality survival and hazard functions<a class="anchor" aria-label="anchor" href="#background-mortality-survival-and-hazard-functions"></a>
 </h3>
-<p>Our lifetable gives us decreasing <span class="math inline">\(l_x\)</span> values at points between <span class="math inline">\(t=0, ..., t_{max}\)</span>, with <span class="math inline">\(l_{t_{max}}=0\)</span>. Let us define the
-background mortality survival function as follows.</p>
-<p><span class="math display">\[
+<p>Our lifetable gives us decreasing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>l</mi><mi>x</mi></msub><annotation encoding="application/x-tex">l_x</annotation></semantics></math>
+values at points between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>t</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub></mrow><annotation encoding="application/x-tex">t=0, ..., t_{max}</annotation></semantics></math>,
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>l</mi><msub><mi>t</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">l_{t_{max}}=0</annotation></semantics></math>.
+Let us define the background mortality survival function as follows.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mrow><mi>g</mi><mi>e</mi><mi>n</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mi>R</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mfrac><msub><mi>l</mi><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><mi>t</mi></mrow></msub><msub><mi>l</mi><msub><mi>x</mi><mn>0</mn></msub></msub></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
 S_{gen}(t) = 1 - R \left(1 - \frac{l_{x_0 + t}}{l_{x_0}} \right)
-\]</span></p>
-<p>where <span class="math inline">\(x_0\)</span> is the mean age of the
-study population at baseline, <span class="math inline">\(R\)</span> is
-a <a href="https://en.wikipedia.org/wiki/Standardized_mortality_ratio" class="external-link">Standardized
-Mortality Ratio</a>, and <span class="math inline">\(l_x\)</span> is an
-appropriate lifetable.</p>
-<p>We can also derive the average background mortality hazard for <span class="math inline">\(t\)</span> in the range <span class="math inline">\([t_1, t_2)\)</span>.</p>
-<p><span class="math display">\[
+</annotation></semantics></math></p>
+<p>where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>0</mn></msub><annotation encoding="application/x-tex">x_0</annotation></semantics></math>
+is the mean age of the study population at baseline,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a <a href="https://en.wikipedia.org/wiki/Standardized_mortality_ratio" class="external-link">Standardized
+Mortality Ratio</a>, and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>l</mi><mi>x</mi></msub><annotation encoding="application/x-tex">l_x</annotation></semantics></math>
+is an appropriate lifetable.</p>
+<p>We can also derive the average background mortality hazard for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+in the range
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">[t_1, t_2)</annotation></semantics></math>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mrow><mi>g</mi><mi>e</mi><mi>n</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><mo>log</mo><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>S</mi><mrow><mi>g</mi><mi>e</mi><mi>n</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mo>−</mo><mo>log</mo><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>S</mi><mrow><mi>g</mi><mi>e</mi><mi>n</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><mrow><msub><mi>t</mi><mn>2</mn></msub><mo>−</mo><msub><mi>t</mi><mn>1</mn></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">
 h_{gen}(t) = \frac{\log[S_{gen}(t_1)] - \log[S_{gen}(t_2)]}{t_2 - t_1}
-\]</span></p>
+</annotation></semantics></math></p>
 </div>
 </div>
 <div class="section level2">
@@ -143,9 +140,9 @@ submissions, so it could mean several things!</p>
 <p>Under this approach, the background mortality is assumed to limit the
 survival function as follows. There is no direct constraint to the
 hazard.</p>
-<p><span class="math display">\[
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mrow><mi>a</mi><mi>d</mi><mi>j</mi></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>min</mo><mrow><mo stretchy="true" form="prefix">[</mo><mi>S</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><msub><mi>S</mi><mrow><mi>g</mi><mi>e</mi><mi>n</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">
 S^{adj}(t) = \min \left[ S(t), S_{gen}(t) \right]
-\]</span></p>
+</annotation></semantics></math></p>
 <p>This is a simple approach, and has been used at least one NICE
 technology appraisal <span class="citation">(National Institute for
 Health and Care Excellence 2022)</span>:</p>
@@ -163,11 +160,11 @@ great as the hazard of background mortality.</p>
 </h3>
 <p>A more rigorous adjustment would be that the hazard of background
 mortality acts as a constraint to the unadjusted hazard <span class="citation">(Sweeting et al. 2023)</span>.</p>
-<p><span class="math display">\[
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>h</mi><mrow><mi>a</mi><mi>d</mi><mi>j</mi></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>max</mo><mrow><mo stretchy="true" form="prefix">[</mo><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><msub><mi>h</mi><mrow><mi>g</mi><mi>e</mi><mi>n</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">
 h^{adj}(t) = \max \left[ h(t), h_{gen}(t) \right]
-\]</span> <span class="math display">\[
+</annotation></semantics></math><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⟹</mo><msup><mi>S</mi><mrow><mi>a</mi><mi>d</mi><mi>j</mi></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>exp</mo><mrow><mo stretchy="true" form="prefix">[</mo><mo>−</mo><msubsup><mo>∫</mo><mn>0</mn><mi>t</mi></msubsup><msup><mi>h</mi><mrow><mi>a</mi><mi>d</mi><mi>j</mi></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi><mi>u</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">
 \implies S^{adj}(t) = \exp \left[ - \int_0^t h^{adj}(u) du \right]
-\]</span></p>
+</annotation></semantics></math></p>
 <p>In either case, we must assume that the original dataset was NOT
 subject to background mortality. Although unlikely to be true, this is a
 common, pragmatic assumption in cost-effectiveness models as long as
@@ -198,10 +195,10 @@ endpoints.</p>
 <p>In general, we wish to constrain the pre- and post-progression
 mortality (PPD and PPS) are at least as great as background
 mortality.</p>
-<p><span class="math display">\[
+<p><span class="math display">$$
 h^{adj}_{PPD}(t) = \max \left[h_{gen}(t), h_{PPD}(t) \right] \\
 h^{adj}_{PPS}(t) = \max \left[h_{gen}(t), h_{PPS}(t) \right] \\
-\]</span></p>
+$$</span></p>
 <p>Formulas for the mean time in PF and OS are shown in the accompanying
 article in respect of hazard and survival functions for TTP, PPD and PPS
 endpoints, where PPS is a function of time from baseline in a Clock
@@ -227,9 +224,10 @@ recommended <span class="citation">(Naimark, Kabboul, and Krahn
 <h2 id="application-to-partitioned-survival-models-psm">Application to Partitioned Survival Models (PSM)<a class="anchor" aria-label="anchor" href="#application-to-partitioned-survival-models-psm"></a>
 </h2>
 <p>The RMD in the PF state and time alive are integrals over the time
-horizon, <span class="math inline">\(T\)</span>, of the survival
-functions of the endpoints PFS and OS. Endpoints PPD and PPS are not
-explicitly defined.</p>
+horizon,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>,
+of the survival functions of the endpoints PFS and OS. Endpoints PPD and
+PPS are not explicitly defined.</p>
 <p>However as discussed in the accompanying manuscript, TTP - and
 therefore the PPD and PPS endpoints which directly follow once PFS and
 OS are defined - are often in practice implicitly defined in PSM
@@ -262,7 +260,8 @@ making further use of <span class="citation">Wickham et al.
 (2023)</span>, <span class="citation">Riffe (2015)</span> and <span class="citation">Müller and Wickham (2023)</span>.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://dplyr.tidyverse.org" class="external-link">"dplyr"</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/timriffe/TR1" class="external-link">"HMDHFDplus"</a></span><span class="op">)</span></span>
+<span><span class="co">#&gt; Error in get(paste0(generic, ".", class), envir = get_method_env()) : </span></span>
+<span><span class="co">#&gt;   object 'type_sum.accel' not found</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://merck.github.io/psm3mkv/">"psm3mkv"</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://tibble.tidyverse.org/" class="external-link">"tibble"</a></span><span class="op">)</span></span></code></pre></div>
 </div>
@@ -276,7 +275,10 @@ mentioned above (with thanks to Robert Hettle for the recommendation).
 The lifetable will need to start from an assumed age at baseline.
 Lifetables are constructed by time in years.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># Assumed population age at baseline (time=0)</span></span>
+<code class="sourceCode R"><span><span class="co"># HMD HFD package</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/timriffe/TR1" class="external-link">"HMDHFDplus"</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Assumed population age at baseline (time=0)</span></span>
 <span><span class="va">baseage</span> <span class="op">&lt;-</span> <span class="fl">51.0</span></span>
 <span></span>
 <span><span class="co"># Mortality data - England &amp; Wales, Female, 2019</span></span>
@@ -294,8 +296,8 @@ Lifetables are constructed by time in years.</p>
 <span><span class="co"># The table needs to end with lx=0</span></span>
 <span><span class="va">mort</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/add_row.html" class="external-link">add_row</a></span><span class="op">(</span><span class="va">mort</span>, Age <span class="op">=</span> <span class="fl">111</span>, lx <span class="op">=</span> <span class="fl">0</span>, Timey <span class="op">=</span> <span class="fl">60</span><span class="op">)</span></span></code></pre></div>
 <p>You will see that the above code cannot run without a login for the
-<a href="www.mortality.org">Human Mortality Database</a>. Alternatively,
-we could just make up a mortality table.</p>
+<a href="https://www.mortality.org" class="external-link">Human Mortality Database</a>.
+Alternatively, we could just make up a mortality table.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">mort</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span></span>
 <span>  Timey <span class="op">=</span> <span class="fl">0</span><span class="op">:</span><span class="fl">30</span>,</span>
@@ -304,8 +306,9 @@ we could just make up a mortality table.</p>
 <span>  qx <span class="op">=</span> <span class="va">dx</span> <span class="op">/</span> <span class="va">lx</span></span>
 <span><span class="op">)</span></span></code></pre></div>
 <p>However we do it, once we have the mortality data, we can apply the
-SMR (<span class="math inline">\(R\)</span>) and derive a lifetable from
-time zero as required.</p>
+SMR
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>)
+and derive a lifetable from time zero as required.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Assumed Standardized Mortality Ratio</span></span>
 <span><span class="va">SMR</span> <span class="op">&lt;-</span> <span class="fl">2</span></span>
@@ -355,22 +358,14 @@ approximately 52.18 weeks per year.</p>
 <span><span class="co"># Fit parametric models to each endpoint</span></span>
 <span><span class="va">allfits</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/fit_ends_mods_par.html">fit_ends_mods_par</a></span><span class="op">(</span><span class="va">bosonc</span><span class="op">)</span></span>
 <span></span>
-<span><span class="co"># Pick out best distributions according to min AIC</span></span>
-<span><span class="va">fit.ppd</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/find_bestfit_par.html">find_bestfit_par</a></span><span class="op">(</span><span class="va">allfits</span><span class="op">$</span><span class="va">ppd</span>, <span class="st">"aic"</span><span class="op">)</span></span>
-<span><span class="va">fit.ttp</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/find_bestfit_par.html">find_bestfit_par</a></span><span class="op">(</span><span class="va">allfits</span><span class="op">$</span><span class="va">ttp</span>, <span class="st">"aic"</span><span class="op">)</span></span>
-<span><span class="va">fit.pfs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/find_bestfit_par.html">find_bestfit_par</a></span><span class="op">(</span><span class="va">allfits</span><span class="op">$</span><span class="va">pfs</span>, <span class="st">"aic"</span><span class="op">)</span></span>
-<span><span class="va">fit.os</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/find_bestfit_par.html">find_bestfit_par</a></span><span class="op">(</span><span class="va">allfits</span><span class="op">$</span><span class="va">os</span>, <span class="st">"aic"</span><span class="op">)</span></span>
-<span><span class="va">fit.pps_cf</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/find_bestfit_par.html">find_bestfit_par</a></span><span class="op">(</span><span class="va">allfits</span><span class="op">$</span><span class="va">pps_cf</span>, <span class="st">"aic"</span><span class="op">)</span></span>
-<span><span class="va">fit.pps_cr</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/find_bestfit_par.html">find_bestfit_par</a></span><span class="op">(</span><span class="va">allfits</span><span class="op">$</span><span class="va">pps_cr</span>, <span class="st">"aic"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Bring together our preferred fits for each endpoint in a list</span></span>
+<span><span class="co"># Bring together preferred fits for each endpoint</span></span>
 <span><span class="va">params</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span></span>
-<span>  ppd <span class="op">=</span> <span class="va">fit.ppd</span><span class="op">$</span><span class="va">fit</span>,</span>
-<span>  ttp <span class="op">=</span> <span class="va">fit.ttp</span><span class="op">$</span><span class="va">fit</span>,</span>
-<span>  pfs <span class="op">=</span> <span class="va">fit.pfs</span><span class="op">$</span><span class="va">fit</span>,</span>
-<span>  os <span class="op">=</span> <span class="va">fit.os</span><span class="op">$</span><span class="va">fit</span>,</span>
-<span>  pps_cf <span class="op">=</span> <span class="va">fit.pps_cf</span><span class="op">$</span><span class="va">fit</span>,</span>
-<span>  pps_cr <span class="op">=</span> <span class="va">fit.pps_cr</span><span class="op">$</span><span class="va">fit</span></span>
+<span>  ppd <span class="op">=</span> <span class="fu"><a href="../reference/find_bestfit.html">find_bestfit</a></span><span class="op">(</span><span class="va">allfits</span><span class="op">$</span><span class="va">ppd</span>, <span class="st">"aic"</span><span class="op">)</span><span class="op">$</span><span class="va">fit</span>,</span>
+<span>  ttp <span class="op">=</span> <span class="fu"><a href="../reference/find_bestfit.html">find_bestfit</a></span><span class="op">(</span><span class="va">allfits</span><span class="op">$</span><span class="va">ttp</span>, <span class="st">"aic"</span><span class="op">)</span><span class="op">$</span><span class="va">fit</span>,</span>
+<span>  pfs <span class="op">=</span> <span class="fu"><a href="../reference/find_bestfit.html">find_bestfit</a></span><span class="op">(</span><span class="va">allfits</span><span class="op">$</span><span class="va">pfs</span>, <span class="st">"aic"</span><span class="op">)</span><span class="op">$</span><span class="va">fit</span>,</span>
+<span>  os <span class="op">=</span> <span class="fu"><a href="../reference/find_bestfit.html">find_bestfit</a></span><span class="op">(</span><span class="va">allfits</span><span class="op">$</span><span class="va">os</span>, <span class="st">"aic"</span><span class="op">)</span><span class="op">$</span><span class="va">fit</span>,</span>
+<span>  pps_cf <span class="op">=</span> <span class="fu"><a href="../reference/find_bestfit.html">find_bestfit</a></span><span class="op">(</span><span class="va">allfits</span><span class="op">$</span><span class="va">pps_cf</span>, <span class="st">"aic"</span><span class="op">)</span><span class="op">$</span><span class="va">fit</span>,</span>
+<span>  pps_cr <span class="op">=</span> <span class="fu"><a href="../reference/find_bestfit.html">find_bestfit</a></span><span class="op">(</span><span class="va">allfits</span><span class="op">$</span><span class="va">pps_cr</span>, <span class="st">"aic"</span><span class="op">)</span><span class="op">$</span><span class="va">fit</span></span>
 <span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level3">
@@ -414,12 +409,12 @@ still without any lifetable constraints.</p>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 3 × 7</span></span></span>
 <span><span class="co">#&gt;          pf        pd        os model  method lxadj psmmeth</span></span>
 <span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;num:.1!&gt;</span> <span style="color: #949494; font-style: italic;">&lt;num:.1!&gt;</span> <span style="color: #949494; font-style: italic;">&lt;num:.1!&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>     274.2     118.5     392.7 PSM    disc   no    simple </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span>     270.2     120.1     390.3 STM-CF disc   no    simple </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span>     270.2     123.8     394.0 STM-CR disc   no    simple</span></span></code></pre></div>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>     274.3     118.3     392.6 PSM    disc   no    simple </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span>     270.1     119.7     389.8 STM-CF disc   no    simple </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span>     270.1     123.7     393.8 STM-CR disc   no    simple</span></span></code></pre></div>
 <p>Discretization has proven fairly accurate. The STM-CR estimate of
-mean time alive has reduced by just -0.1 weeks for example, from 393.9
-to 394 weeks.</p>
+mean time alive has reduced by just 0.1 weeks for example, from 393.9 to
+393.8 weeks.</p>
 <p>Finally, we use a discretization approximation and apply the
 lifetable constraints.</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
@@ -435,20 +430,20 @@ lifetable constraints.</p>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 3 × 7</span></span></span>
 <span><span class="co">#&gt;          pf        pd        os model  method lxadj psmmeth</span></span>
 <span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;num:.1!&gt;</span> <span style="color: #949494; font-style: italic;">&lt;num:.1!&gt;</span> <span style="color: #949494; font-style: italic;">&lt;num:.1!&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>     274.2      91.9     366.1 PSM    disc   yes   simple </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span>     230.4     108.0     338.4 STM-CF disc   yes   simple </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span>     230.4     111.2     341.6 STM-CR disc   yes   simple</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>     235.4     105.5     340.9 PSM    disc   yes   simple </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span>     230.1     107.6     337.7 STM-CF disc   yes   simple </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span>     230.1     111.6     341.6 STM-CR disc   yes   simple</span></span>
 <span></span>
 <span><span class="co"># Proportion of time alive spent in PF</span></span>
 <span><span class="va">proppf3</span> <span class="op">&lt;-</span> <span class="va">res3</span><span class="op">$</span><span class="va">pf</span> <span class="op">/</span> <span class="va">res3</span><span class="op">$</span><span class="va">os</span></span></code></pre></div>
-<p>There is now a large difference between the STM-CR compared to the
+<p>There is now some difference between the STM-CR compared to the
 STM-CF and PSM structures. All structures estimate fairly similar RMD
-estimates of being alive (range: 338.4 to 366.1 weeks). The estimate of
-mean time alive in the STM-CR structure has reduced by 52.4 weeks from
+estimates of being alive (range: 337.7 to 341.6 weeks). The estimate of
+mean time alive in the STM-CR structure has reduced by 52.3 weeks from
 393.9 to 341.6 weeks.</p>
 <p>The proportion of that time in the PF rather than PD state varies
-considerably (PSM: 74.9%, STM-CF: 68.1%, STM-CR: 67.5%). Given that the
-hazard of mortality would typically be lower before rather than after
+somewhat (PSM: 69%, STM-CF: 68.1%, STM-CR: 67.3%). Given that the hazard
+of mortality would typically be lower before rather than after
 progression, the pre-progression mortality is likely to be more affected
 by any mortality constraint that post-progression mortality. The STM-CR
 model of post-progression survival depends on time from progression and
@@ -470,16 +465,16 @@ structure.</p>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 3 × 7</span></span></span>
 <span><span class="co">#&gt;          pf        pd        os model  method lxadj psmmeth</span></span>
 <span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;num:.1!&gt;</span> <span style="color: #949494; font-style: italic;">&lt;num:.1!&gt;</span> <span style="color: #949494; font-style: italic;">&lt;num:.1!&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>     272.9      93.2     366.1 PSM    disc   yes   complex</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span>     230.4     108.0     338.4 STM-CF disc   yes   complex</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span>     230.4     111.2     341.6 STM-CR disc   yes   complex</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>     231.0     103.7     334.7 PSM    disc   yes   complex</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span>     230.1     107.6     337.7 STM-CF disc   yes   complex</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span>     230.1     111.6     341.6 STM-CR disc   yes   complex</span></span>
 <span></span>
 <span><span class="co"># Proportion of time alive spent in PF</span></span>
 <span><span class="va">proppf4</span> <span class="op">&lt;-</span> <span class="va">res4</span><span class="op">$</span><span class="va">pf</span> <span class="op">/</span> <span class="va">res4</span><span class="op">$</span><span class="va">os</span></span></code></pre></div>
 <p>All structures estimate fairly similar RMD estimates of being alive
-(range: 338.4 to 366.1 weeks). The proportion of that time in the PF
-rather than PD state varied again considerably by model structure (PSM:
-74.5%, STM-CF: 68.1%, STM-CR: 67.5%).</p>
+(range: 334.7 to 341.6 weeks). The proportion of that time in the PF
+rather than PD state varied a little by model structure (PSM: 69%,
+STM-CF: 68.1%, STM-CR: 67.3%).</p>
 </div>
 <div class="section level3">
 <h3 id="comparing-the-results">Comparing the results<a class="anchor" aria-label="anchor" href="#comparing-the-results"></a>
@@ -511,17 +506,17 @@ time alive is given in the table below.</p>
 </tr>
 <tr class="even">
 <td align="left">No lifetable constraint, discretized calculation</td>
-<td align="left">270.2</td>
-<td align="left">0.1</td>
-<td align="left">390.3</td>
-<td align="left">0.4</td>
+<td align="left">270.1</td>
+<td align="left">-0.1</td>
+<td align="left">389.8</td>
+<td align="left">-0.1</td>
 </tr>
 <tr class="odd">
 <td align="left">With lifetable constraint, discretized calculation</td>
-<td align="left">230.4</td>
-<td align="left">-39.8</td>
-<td align="left">338.4</td>
-<td align="left">-51.5</td>
+<td align="left">230.1</td>
+<td align="left">-40.1</td>
+<td align="left">337.7</td>
+<td align="left">-52.2</td>
 </tr>
 </tbody>
 </table>
@@ -555,17 +550,17 @@ time alive is given in the table below.</p>
 </tr>
 <tr class="even">
 <td align="left">No lifetable constraint, discretized calculation</td>
-<td align="left">270.2</td>
-<td align="left">0.1</td>
-<td align="left">394</td>
-<td align="left">0.1</td>
+<td align="left">270.1</td>
+<td align="left">-0.1</td>
+<td align="left">393.8</td>
+<td align="left">-0.1</td>
 </tr>
 <tr class="odd">
 <td align="left">With lifetable constraint, discretized calculation</td>
-<td align="left">230.4</td>
-<td align="left">-39.8</td>
+<td align="left">230.1</td>
+<td align="left">-40.1</td>
 <td align="left">341.6</td>
-<td align="left">-52.4</td>
+<td align="left">-52.3</td>
 </tr>
 </tbody>
 </table>
@@ -600,43 +595,41 @@ PSM</td>
 <tr class="even">
 <td align="left">No lifetable constraint, discretized calculation,
 simple PSM</td>
-<td align="left">274.2</td>
-<td align="left">-0.2</td>
-<td align="left">392.7</td>
-<td align="left">0</td>
+<td align="left">274.3</td>
+<td align="left">-0.1</td>
+<td align="left">392.6</td>
+<td align="left">-0.1</td>
 </tr>
 <tr class="odd">
 <td align="left">With lifetable constraint, discretized calculation,
 simple PSM</td>
-<td align="left">274.2</td>
-<td align="left">-0.2</td>
-<td align="left">366.1</td>
-<td align="left">-26.6</td>
+<td align="left">235.4</td>
+<td align="left">-39</td>
+<td align="left">340.9</td>
+<td align="left">-51.8</td>
 </tr>
 <tr class="even">
 <td align="left">With lifetable constraint, discretized calculation,
 complex PSM</td>
-<td align="left">272.9</td>
-<td align="left">-1.5</td>
-<td align="left">366.1</td>
-<td align="left">-26.6</td>
+<td align="left">231</td>
+<td align="left">-43.4</td>
+<td align="left">334.7</td>
+<td align="left">-58.1</td>
 </tr>
 </tbody>
 </table>
 <p>The change in the RMDs for the ‘complex’ PSM structure compared to
-the ‘simple’ PSM structure were -1.3, 1.3 and 0 weeks respectively for
-time in PF state, PD state and time alive.</p>
+the ‘simple’ PSM structure were -4.3, -1.9 and -6.2 weeks respectively
+for time in PF state, PD state and time alive.</p>
 </div>
 <div class="section level3">
-<h3 id="for-further-investigation">For further investigation<a class="anchor" aria-label="anchor" href="#for-further-investigation"></a>
+<h3 id="possible-extensions">Possible extensions<a class="anchor" aria-label="anchor" href="#possible-extensions"></a>
 </h3>
-<ul>
-<li>The effect of the lifetable constraint on the STMs was much greater
-- especially to time in the PF state - in the STMs rather than the
-PSM.</li>
-<li>The package also allows application of discounting through the
-<code>discrate</code> optional call to <code>calc_allrnds()</code>.</li>
-</ul>
+<p>Not applied here, the package also allows application of discounting
+through the <code>discrate</code> optional call to
+<code>calc_allrnds()</code>. This work could also be easily extended
+through calculating RMDs or Life Years that are Quality Adjusted
+(QALYs).</p>
 </div>
 </div>
 <div class="section level2 unnumbered">
@@ -649,13 +642,12 @@ A Platform for Parametric Survival Modeling in <span>R</span>.”</span>
 <em>Journal of Statistical Software</em> 70 (8): 1–33.
 </div>
 <div id="ref-pack_tibble" class="csl-entry">
-Müller, Kirill, and Hadley Wickham. 2023. <em>Tibble: Simple Data
-Frames</em>. <a href="https://CRAN.R-project.org/package=tibble" class="external-link">https://CRAN.R-project.org/package=tibble</a>.
+Müller, Kirill, and Hadley Wickham. 2023. <em><span class="nocase">tibble</span>: Simple Data Frames</em>. <a href="https://CRAN.R-project.org/package=tibble" class="external-link">https://CRAN.R-project.org/package=tibble</a>.
 </div>
 <div id="ref-muston2024informing" class="csl-entry">
 Muston, Dominic. 2024. <span>“Informing Structural Assumptions for Three
 State Oncology Cost-Effectiveness Models Through Model Efficiency and
-Fit.”</span> <em>Applied Health Economics and Health Policy</em>.
+Fit.”</span> <em>Applied Health Economics and Health Policy</em>. <a href="https://doi.org/10.1007/s40258-024-00884-2" class="external-link">https://doi.org/10.1007/s40258-024-00884-2</a>.
 </div>
 <div id="ref-naimark2013half" class="csl-entry">
 Naimark, David MJ, Nader N Kabboul, and Murray D Krahn. 2013. <span>“The
@@ -670,7 +662,8 @@ National Institute for Health; Care Excellence. <a href="https://www.nice.org.uk
 </div>
 <div id="ref-pack_HMDHFDplus" class="csl-entry">
 Riffe, Tim. 2015. <span>“Reading Human Fertility Database and Human
-Mortality Database Data into r.”</span> TR-2015-004. MPIDR. <a href="https://doi.org/10.4054/MPIDR-TR-2015-004" class="external-link">https://doi.org/10.4054/MPIDR-TR-2015-004</a>.
+Mortality Database Data into <span>R</span>.”</span> TR-2015-004. MPIDR.
+<a href="https://doi.org/10.4054/MPIDR-TR-2015-004" class="external-link">https://doi.org/10.4054/MPIDR-TR-2015-004</a>.
 </div>
 <div id="ref-sweeting2023survival" class="csl-entry">
 Sweeting, Michael J, Mark J Rutherford, Dan Jackson, Sangyu Lee,
@@ -681,18 +674,19 @@ Decision Making</em> 43 (6): 737–48.
 </div>
 <div id="ref-pack_dplyr" class="csl-entry">
 Wickham, Hadley, Romain François, Lionel Henry, Kirill Müller, and Davis
-Vaughan. 2023. <em>Dplyr: A Grammar of Data Manipulation</em>. <a href="https://CRAN.R-project.org/package=dplyr" class="external-link">https://CRAN.R-project.org/package=dplyr</a>.
+Vaughan. 2023. <em><span class="nocase">dplyr</span>: A Grammar of Data
+Manipulation</em>. <a href="https://CRAN.R-project.org/package=dplyr" class="external-link">https://CRAN.R-project.org/package=dplyr</a>.
 </div>
 </div>
 </div>
-  </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
+  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>
 </div>
 
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by Dominic Muston, Merck &amp; Co., Inc., Rahway, NJ, USA and its affiliates. Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.9. <br>Copyright © 2024 Merck &amp; Co., Inc., Rahway, NJ, USA and its affiliates. All rights reserved.</p>
+  <p>Developed by Dominic Muston, Merck &amp; Co., Inc., Rahway, NJ, USA and its affiliates. Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1. <br>Copyright © 2024 Merck &amp; Co., Inc., Rahway, NJ, USA and its affiliates. All rights reserved.</p>
 </div>
 
 <div class="pkgdown-footer-right">
@@ -702,9 +696,9 @@ Vaughan. 2023. <em>Dplyr: A Grammar of Data Manipulation</em>. <a href="https://
     </footer>
 </div>
 
-  
 
-  
+
+
 
   </body>
 </html>
